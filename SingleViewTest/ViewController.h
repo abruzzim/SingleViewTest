@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+// Declare variable names for the subviews.
+@property (strong, nonatomic) UIImageView *flowChartImg;
 
 @end
 
