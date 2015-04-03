@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+// Add scroll view capability.
+@property (strong,nonatomic) UIScrollView *scrollView;
 // Declare variable names for the subviews.
 @property (strong, nonatomic) UIImageView *flowChartImg;
 

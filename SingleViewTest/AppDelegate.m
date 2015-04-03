@@ -17,13 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
 
     CGRect viewRect = [[UIScreen mainScreen] bounds];        // Return a screen object representing the device's screen.
     self.window = [[UIWindow alloc] initWithFrame:viewRect]; // Create a UIWindow (The "Canvas").
+
+    // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] init];     // Create a ViewController (The "Paintbrush").
     self.window.rootViewController = self.viewController;    // Assign a ViewController as the window's root view controller.
-    [self.window makeKeyAndVisible];                         //Make the receiver the key window and visible.
+    [self.window makeKeyAndVisible];                         // Make the receiver the key window and visible.
 
     return YES;
 }
